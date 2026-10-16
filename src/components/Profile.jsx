@@ -2,6 +2,7 @@ import Bio from "./Bio";
 import StatCard from "./StatCard";
 import { useState } from "react";
 import Hire from "./Hire";
+import Controls from "./Controls";
 
 export default function Profile()
 {
@@ -34,26 +35,8 @@ export default function Profile()
                     <StatCard value={rate} label="PHP per hour" />
                 </div>
             </div>
-            <div className="flex gap-4">
-                    <button
-                        className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
-                        onClick={handleFollow}
-                    >
-                        Follow
-                    </button>
-                    <button
-                        className="cursor-pointer rounded-lg bg-[#222222] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
-                        onClick={handleAddRate}
-                    >
-                        Add rate
-                    </button>
-                    <button
-                        className="cursor-pointer rounded-lg border-2 border-[#222222] px-8 py-3 text-xl font-bold"
-                        onClick={handleReset}
-                    >
-                        Reset
-                    </button>
-            </div>
+            
+            <Controls button1={handleFollow} button2={handleAddRate} button3={handleReset} />
 
             <Hire rate={rate} />
             
