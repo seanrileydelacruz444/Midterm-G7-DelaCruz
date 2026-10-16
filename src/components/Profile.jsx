@@ -1,6 +1,7 @@
 import Bio from "./Bio";
 import StatCard from "./StatCard";
 import { useState } from "react";
+import Hire from "./Hire";
 
 export default function Profile()
 {
@@ -26,6 +27,7 @@ export default function Profile()
                 <header>
                     <Bio name = "Sean Riley Dela Cruz" username = "seanrileydelacruz444" />
                 </header>
+                
 
                 <div className="mt-6 flex gap-6">
                     <StatCard value={followers} label="Followers" />
@@ -52,6 +54,9 @@ export default function Profile()
                         Reset
                     </button>
             </div>
+
+            <Hire rate={rate} />
+            
         </div>
     )
 }

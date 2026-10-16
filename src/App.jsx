@@ -1,11 +1,8 @@
-import { useState } from "react";
 import Navbar from "./components/Navbar";
-import StatCard from "./components/StatCard";
 import Profile from "./components/Profile";
-import RepoCard from "./components/RepoCard";
 import Footer from "./components/Footer";
 import Repositories from "./components/Repositories";
-import Hire from "./components/Hire";
+
 
 function App() {
   return (
@@ -15,7 +12,7 @@ function App() {
       <Profile />
 
       <Repositories/>
-      
+
       <Footer />
 
     </div>
