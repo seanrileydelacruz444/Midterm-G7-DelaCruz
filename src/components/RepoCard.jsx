@@ -2,6 +2,7 @@ import { Children } from "react";
 
 export default function RepoCard({name, description, language, commits, children})
 {
+  
     return(
         <div className="rounded-xl border-2 border-[#222222] p-8">
           <div className="flex items-center justify-between">
