@@ -16,7 +16,7 @@ export default function Hire({rate})
 
     return(
         <>
-            <div className ="mx-20 mt-8 flex items-center justify-between rounded-x1 bg-[#222222] p- text-[#FAF3E1]">
+            <div className ="mx-20 mt-8 flex items-center justify-between rounded-xl bg-[#222222] p-6 text-[#FAF3E1]">
                 <div>
                     <h3 className="text-2xl font-bold"> Hire me for {hours} hours</h3>
                     <p className="font-bold text-[#FA8112]">PHP {hours * rate}</p>
