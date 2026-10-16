@@ -5,6 +5,7 @@ import StatCard from "./components/StatCard";
 import Profile from "./components/Profile";
 import RepoCard from "./components/RepoCard";
 import Footer from "./components/Footer";
+import Repositories from "./components/Repositories";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -78,7 +79,7 @@ function App() {
         </div>
       </div>
 
-      <main className="grid grid-cols-3 gap-8 px-20 pt-8">
+      <Repositories>
 
         <RepoCard
           name="portfolio"
@@ -123,7 +124,7 @@ function App() {
         </RepoCard>    
 
         
-      </main>
+      </Repositories>
 
       <Footer />
 
