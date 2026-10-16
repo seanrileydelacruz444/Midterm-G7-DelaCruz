@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Bio from "./components/Bio";
 import StatCard from "./components/StatCard";
+import Profile from "./components/Profile";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -40,8 +41,7 @@ function App() {
       <Navbar />
 
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
-        <div>
-
+        <Profile>
           <Bio name = "Sean Riley Dela Cruz" username = "seanrileydelacruz444" />
 
           <div className="mt-6 flex gap-6">
@@ -51,7 +51,7 @@ function App() {
             <StatCard value={rate} label="PHP per hour" />
             
           </div>
-        </div>
+        </Profile>
 
         <div className="flex gap-4">
           <button
