@@ -35,7 +35,7 @@ export default function Profile()
                     <StatCard value={rate} label="PHP per hour" />
                 </div>
             </div>
-            
+
             <Controls button1={handleFollow} button2={handleAddRate} button3={handleReset} />
 
             <Hire rate={rate} />
